@@ -1,0 +1,26 @@
+{
+  "network": "testnet",
+  "port": 3001,
+  "services": [
+    "bitcoind",
+    "insight-api",
+    "insight-ui",
+    "web"
+  ],
+  "servicesConfig": {
+    "bitcoind": {
+      "connect": [
+        {
+          "rpchost": "127.0.0.1",
+          "rpcuser": "blockexplorer",
+          "rpcpassword": "noneedofsecurepasswordhere",
+          "rpcport": 18332,
+          "zmqpubrawtx": "tcp://127.0.0.1:29332",
+          "zmqpubhashblock": "tcp://127.0.0.1:29332",
+          "zmqpubhashtx": "tcp://127.0.0.1:29332",
+          "zmqpubrawblock": "tcp://127.0.0.1:29332"
+        }
+      ]
+    }
+  }
+}
